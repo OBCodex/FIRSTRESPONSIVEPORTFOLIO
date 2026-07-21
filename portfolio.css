@@ -1283,8 +1283,7 @@ align-items: center;
     font-size: 30px;
     padding: 10px 10px;
     resize: none;
-    overflow-y: hidden;
-    
+    overflow-y: hidden; 
 }
 .messageBox ::placeholder{
     
@@ -1367,12 +1366,12 @@ align-items: center;
     letter-spacing: 2px;
 }
 .G{
-    background-color: blueviolet;
     grid-area: G;
-    height: 100vh;
+    height: 5vh;
+    display: flex;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 450px) {
     .gridBox{
     width: 80%;
     /* height: inherit; */
@@ -1777,7 +1776,7 @@ transition: all 0.5s ease;
     font-weight: bold;
 }
 .C{
-
+grid-area: C;
 }
 .servicesContainer{
     display: none;
@@ -1901,6 +1900,7 @@ transition: all 0.5s ease;
     text-align:left;
     padding: 0;
     margin-top: 2rem;
+    grid-area: D;
 }
 .aboutMobile{
     display: flex;
@@ -1955,13 +1955,16 @@ transition: all 0.5s ease;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    padding: 5px;
     grid-area: E;
+    background: none;
+    padding: 0;
     
 }
 .mobileE{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    
+    background: none;
 
 }
 .mobileEText{
@@ -2072,13 +2075,111 @@ margin-bottom: 1rem;
     display: none;
 }
 .G{
+    grid-area: G;
+    height: 110vh;
+    
+    
+}
+.contactsG{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding-top: 1rem;
+    align-items: center;
+}
+.contactsG div{
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 8px 32px rgba(0,0,0,.15);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactsG div a{
+    text-decoration: none;
+}
+.companyContainer{
     display: none;
 }
+.userTerms{
+    display: none;
+}
+.mobileG{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100vh;
+}
+.mobileGText {
+    display: flex;
+    flex-direction: column;
+}
+.mobileGText h1{
+    color: rgba(251, 172, 27);
+    font-family:tahoma ;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.others{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.others h2{
+    font-family: tahoma;
+    margin: 0;
+}
+.others h3{
+    color: rgba(251, 172, 27);
+    font-family: tahoma;
+    font-size: 30px;
+    margin: 0;
+}
+form{
+    box-shadow: 0px 8px 32px rgba(0,0,0,.15);
 
-
-
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    gap: 1rem;
+}
+form input{
+    padding-right:100px;
+    padding-left: 10px;
+    border-radius: 15px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    border: 1px solid grey
 }
 
+.co textarea{
+    width: 250px;
+    height: 25vh;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 15px;
+    padding: 10px 10px;
+    resize: none;
+    overflow-y: hidden; 
+}
+.co button{
+    background:rgba(52, 76, 52);
+    border: 0;
+    padding: 10px 100px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-family: tahoma;
+    color: white;
+}
+
+}
 @media (max-width: 425px) {
     
 }
