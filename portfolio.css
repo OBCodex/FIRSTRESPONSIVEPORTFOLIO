@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
     /* height: inherit; */
     margin: 0 auto;
     display: grid;
-    grid-template-areas: "A A A" "B B B" "C C C" "D D D" "E E E" "F F F" "I I I" ;
+    grid-template-areas: "A A A" "B B B" "C C C" "D D D" "E E E" "F F F" "G G G" ;
     row-gap: 4vh;
 }
 
@@ -436,15 +436,15 @@ transition: all 0.5s ease;
     display: none;
 }
 .green-container{
-    width: 88%;
+    width: 89.1%;
     height: 5vh;
-     background-color: rgba(251, 172, 27);
+    background-color: rgba(251, 172, 27);
     position: absolute;
     z-index: 4;
     top: 66.4rem;
 }
 .yellow-container{
-    width: 88%;
+    width: 89%;
     height: 6vh;
     background-color: rgba(52, 76, 52);
     transform: rotate(-1deg);
@@ -1333,37 +1333,52 @@ align-items: center;
     gap: 19rem;
     
 }
+.contain{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.companyContainer{
+    width: 50%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    gap: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.companyContainer h3{
+    font-size: 25px;
+    color: rgba(251, 172, 27);
+}
+.companyContainer h4{
+    font-size: 20px;
+}
+.userTerms{
+    width: 50%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.userTerms h1{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+}
 .G{
     background-color: blueviolet;
     grid-area: G;
+    height: 100vh;
 }
-.H{
-    background-color: blue;
-    grid-area: H;
-}
-.I{
-    background-color: violet;
-    grid-area: I;
-}
-.J{
-    background-color: rgb(204, 136, 136);
-    grid-area: J;
-}
-.K{
-    background-color: yellowgreen;
-    grid-area: K;
-}
-.L{
-    background-color: goldenrod;
-    grid-area: L;
-}
+
 @media (max-width: 426px) {
     .gridBox{
     width: 80%;
     /* height: inherit; */
     margin: 0 auto;
     display: grid;
-    grid-template-areas: "A A A" "B B B" "C C C" "D D D" "E E E" "F F F";
+    grid-template-areas: "A A A" "B B B" "C C C" "D D D" "E E E" "F F F" "G G G";
     row-gap: 3vh;
 }
 .A{
@@ -1941,10 +1956,12 @@ transition: all 0.5s ease;
     justify-content: start;
     align-items: start;
     padding: 5px;
-    background: none;
+    grid-area: E;
+    
 }
 .mobileE{
     width: 100%;
+    
 
 }
 .mobileEText{
@@ -2051,6 +2068,13 @@ margin-bottom: 1rem;
 .thirdButton p{
     color: rgba(251, 172, 27);
 }
+.F{
+    display: none;
+}
+.G{
+    display: none;
+}
+
 
 
 }
