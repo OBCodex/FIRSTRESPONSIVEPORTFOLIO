@@ -7,6 +7,33 @@
 html, body {
   scrollbar-width: none;
   -ms-overflow-style: none;
+  background-color: white;
+}
+.dark{
+    background-color: black;
+}
+.modal{
+    display: flex;
+    position: absolute;
+    background-color: red;
+    text-align: justify;
+    width: 800px;
+    padding: 3rem;
+    border-radius: 20px;
+    top: 5rem;
+    left: 46rem;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modal button{
+    height: 70px;
+}
+.show{
+    display: block;
+}
+.none{
+    display: none;
 }
 
 html::-webkit-scrollbar,
@@ -1369,6 +1396,9 @@ align-items: center;
     grid-area: G;
     height: 5vh;
     display: flex;
+}
+.mobileG{
+    display: none;
 }
 
 @media (max-width: 450px) {

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="portfolio.css">
     <!-- Replace your current Font Awesome link with this stable version -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<script src="portfolio.js" defer></script>
 </head>
 <body>
     <div class="gridParent">
@@ -15,28 +16,29 @@
                 <div class="first-container">       
                 <div class="circle">
                     <i class="fa-solid fa-brain"></i>
-                </div>
-                <h1>Obcodex.</h1>
+                </div >
+                <h1 id="submitButton">Obcodex.</h1>
             </div>
             <div class="second-container">
                 <a href="#" style="color: rgba(251,172,27); ">Home</a>
-                <a href="#services" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'}); return false">Services</a>
-                <a href="#About" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'}); return false">About</a>
+                <a href="#services" id="servicesLink">Services</a>
+                <a href="#About" id="aboutLink">About</a>
                 <!-- <a href="#projects">Projects</a> -->
-                <a href="#projects" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' }); return false;">Projects</a>
+                <a href="#projects" id="projectLink">Projects</a>
                 <!-- <a href="#">Blogs</a>
                 <a href="#">Testimonials</a> -->
             </div>
             <div class="contactingContainer">
+                <!-- <button id="button">Dark mode</button> -->
                 <button class="contact-btn">
-                    <a href="#contacts" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'}); return false">Contact Me</a>
+                    <a href="#contacts" id="contactLink">Contact Me</a>
                 </button>
             </div>
             <div class="navBars">
                 <i class="fa-solid fa-bars"></i>
             </div>
             </div>
-            <div class="B">
+            <div class="B" id="Body">
                 <div class="third-container">
             <div>
             <p>Hello There!</p>
@@ -61,7 +63,7 @@
                     <i class="fa-solid fa-play"></i>
                 </button>
             </div>
-            <div class="second-button" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'}); return false">
+            <div class="second-button" id="hireLink">
                 <h1>Hire Me</h1>
             </div>
            </div>
@@ -128,7 +130,7 @@
             </div>
         <div class="green-container"></div>
         <div class="yellow-container"></div>
-            <div class="C">
+            <div class="C" id="service">
                 <div class="mobileC">
             <div class="whatIDO">
                 <p>WHAT I DO</p>
@@ -215,7 +217,7 @@
         </div>
             </div>
             
-            <div class="D">
+            <div class="D" id="about">
                 <div class="mobileD">
                 <div class="aboutMobile">
                 <p>ABOUT ME</p>
@@ -279,7 +281,7 @@
             </div>
             </div>
             </div>
-            <div class="E">
+            <div class="E" id="project">
                 <div class="mobileE">
                     <div class="mobileEText">
                     <h1>PORTFOLIO</h1>
@@ -449,7 +451,7 @@
                
             </div>
             </div>
-            <div class="F">
+            <div class="F" id="contact">
                 <div class="firstInnerContact">
                 <div class="contactText">
                     <i class="fa-solid fa-minus"></i>
@@ -494,6 +496,11 @@
             </div>
             </div>
             
+            <div class="modal">
+                <button id="cancel">X</button>
+                <H1>Lorem ipsum dolor,  adipisci atque amet quo? Reiciendis eum quo quidem.</H1>
+
+            </div>
             
             <form action="https://formspree.io/f/mnjkkbbg" method="post">
             <div class="secondInnerContact">
@@ -520,7 +527,7 @@
                     <textarea name="message" name="message" placeholder="Type your message here..." required></textarea>
                 </div>
                  <div class="submitButton">
-                <button class="submitButtonInner" type="submit">Submit</button>
+                <button class="submitButtonInner" type="submit" >Submit</button>
                 <!-- <button class="projectButtonInners">
                     <a href="www.facebook.com/obcodex" target="_blank">
                         <i class="fa-solid fa-arrow-right"></i>
