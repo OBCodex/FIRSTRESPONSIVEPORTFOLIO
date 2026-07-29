@@ -7,17 +7,23 @@ const aboutLink = document.getElementById("aboutLink").addEventListener("click",
 const projectLink = document.getElementById("projectLink").addEventListener("click", ()=>{
     document.getElementById("project").scrollIntoView({behavior: "smooth"});
 });
+
 const contactLink = document.getElementById("contactLink").addEventListener("click", ()=>{
     document.getElementById("contact").scrollIntoView({behavior: "smooth"});
 });
+
 const HireLink = document.getElementById("hireLink").addEventListener("click", ()=>{
     document.getElementById("contact").scrollIntoView({behavior: "smooth"});
 });
+
+
+
 // toggle 
 // const button =document.getElementById("button");
 // button.addEventListener("click", ()=>{
 //     document.querySelector("body").classList.toggle("dark")
-// })
+// });
+
 // const submitButton = document.getElementById("submitButton")
 //  const modal= document.querySelector(".modal");
 
