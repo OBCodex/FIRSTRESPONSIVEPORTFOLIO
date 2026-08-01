@@ -1318,9 +1318,7 @@ align-items: center;
     resize: none;
     overflow-y: hidden; 
 }
-.messageBox ::placeholder{
-    
-}
+
 .messageBox textarea:focus{
     outline: none;
 }
