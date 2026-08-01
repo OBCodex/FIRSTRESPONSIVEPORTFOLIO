@@ -20,8 +20,8 @@ const viewPort = document.getElementById("viewPort").addEventListener("click", (
     document.getElementById("WHATIDO").scrollIntoView({behavior: "smooth"});
 })
 
-const Hire = document.getElementById("Hire").addEventListener("click", ()=>{
-    document.getElementById("contacts").scrollIntoView({behavior: "smooth"});
+const Hire = document.getElementById("HireMe").addEventListener("click", ()=>{
+    document.getElementById("letsTalk").scrollIntoView({behavior: "smooth"});
 })
 
 // toggle 
