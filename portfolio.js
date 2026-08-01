@@ -21,7 +21,7 @@ const viewPort = document.getElementById("viewPort").addEventListener("click", (
 })
 
 const Hire = document.getElementById("Hire").addEventListener("click", ()=>{
-    document.getElementById("contact").scrollIntoView({behavior: "smooth"});
+    document.getElementById("contacts").scrollIntoView({behavior: "smooth"});
 })
 
 // toggle 
