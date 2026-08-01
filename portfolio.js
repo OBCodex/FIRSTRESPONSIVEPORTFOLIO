@@ -16,6 +16,9 @@ const HireLink = document.getElementById("hireLink").addEventListener("click", (
     document.getElementById("contact").scrollIntoView({behavior: "smooth"});
 });
 
+const viewPort = document.getElementById("viewPort").addEventListener("click", ()=>{
+    document.getElementById("WHATIDO").scrollIntoView({behavior: "smooth"});
+})
 
 
 // toggle 
