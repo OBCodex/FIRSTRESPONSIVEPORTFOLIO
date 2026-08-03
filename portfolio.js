@@ -23,6 +23,70 @@ const viewPort = document.getElementById("viewPort").addEventListener("click", (
 const Hire = document.getElementById("HireMe").addEventListener("click", ()=>{
     document.getElementById("letsTalk").scrollIntoView({behavior: "smooth"});
 })
+const mobileServices = document.getElementById("mobileServices").addEventListener("click", ()=>{
+    document.getElementById("service").scrollIntoView({behavior: "smooth"});
+    const containerF = document.getElementById("mobileFContainer").classList.remove("show")
+     if(containerF === true){
+    document.getElementById("bars").style.display = "none"
+    document.getElementById("xmark").style.display = "block"
+  }else{
+    document.getElementById("xmark").style.display = "none"
+    document.getElementById("bars").style.display = "block"
+  }
+
+})
+
+const mobileAboutMe = document.getElementById("mobileAboutMe").addEventListener("click", ()=>{
+    document.getElementById("about").scrollIntoView({behavior: "smooth"});
+    const containerF = document.getElementById("mobileFContainer").classList.remove("show")
+     if(containerF === true){
+    document.getElementById("bars").style.display = "none"
+    document.getElementById("xmark").style.display = "block"
+  }else{
+    document.getElementById("xmark").style.display = "none"
+    document.getElementById("bars").style.display = "block"
+  }
+
+})
+
+const featuredProjects = document.getElementById("featuredProjects").addEventListener("click", ()=>{
+    document.getElementById("project").scrollIntoView({behavior: "smooth"});
+    const containerF = document.getElementById("mobileFContainer").classList.remove("show")
+    if(containerF === true){
+    document.getElementById("bars").style.display = "none"
+    document.getElementById("xmark").style.display = "block"
+  }else{
+    document.getElementById("xmark").style.display = "none"
+    document.getElementById("bars").style.display = "block"
+  }
+})
+
+const contactC = document.getElementById("contactC").addEventListener("click", ()=>{
+    document.getElementById("letsTalk").scrollIntoView({behavior: "smooth"});
+    const containerF = document.getElementById("mobileFContainer").classList.remove("show")
+    if(containerF === true){
+    document.getElementById("bars").style.display = "none"
+    document.getElementById("xmark").style.display = "block"
+  }else{
+    document.getElementById("xmark").style.display = "none"
+    document.getElementById("bars").style.display = "block"
+  }
+})
+const navBar = document.querySelector(".navBars ").addEventListener("click", (e)=>{
+   
+  const containerF =  document.getElementById("mobileFContainer").classList.toggle("show");
+  console.log(containerF)
+  if(containerF === true){
+    document.getElementById("bars").style.display = "none"
+    document.getElementById("xmark").style.display = "block"
+  }else{
+    document.getElementById("xmark").style.display = "none"
+    document.getElementById("bars").style.display = "block"
+  }
+})
+
+
+
 
 // toggle 
 // const button =document.getElementById("button");
